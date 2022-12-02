@@ -1,5 +1,3 @@
-#### kubespray_on_kvm
-
 ![iameg](https://github.com/NileshChandekar/kubespray_on_kvm/blob/main/images/featuredImage_hu3bced1e920add2777bea4e2136b2d62b_53357_700x350_fill_q95_box_smart1_2.png)
 
 Creating an HA cluster using Kubespray and understanding how the control plane’s components behave
