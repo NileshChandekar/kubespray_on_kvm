@@ -528,3 +528,18 @@ round-trip min/avg/max = 0.229/0.261/0.300 ms
 ```
 
 
+Kubespray reset
+---
+
+* After a bit of reading through Google, I found an article referencing the Kubespray reset.yml playbook. This will basically reset all nodes, remove all config and allow you to redeploy Kubernetes.
+
+```
+ansible-playbook -i inventory/remko/hosts.yaml reset.yml --become --become-user=root
+```
+
+* And then redeployed Kubernetes using the cluster.yml playbook.
+
+```
+ansible-playbook -i inventory/remko/hosts.yaml cluster.yml --become --become-user=root
+```
+
